@@ -1,11 +1,69 @@
 ﻿<!DOCTYPE html>
-
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <title>"Preparative Focus Gradient Calculator"</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient Calculator</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+            padding: 40px;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: auto;
+            color: #24292e;
+        }
+
+        h1 {
+            border-bottom: 1px solid #eaecef;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+
+        .prompt-section {
+            margin-bottom: 25px;
+        }
+
+        .prompt-label {
+            font-weight: 600;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        label {
+            margin-right: 20px;
+            cursor: pointer;
+            display: inline-block;
+        }
+
+        input[type="radio"] {
+            margin-right: 5px;
+        }
+    </style>
 </head>
 <body>
+
+    <h1>Preparative Focus Gradient Calculator</h1>
+
+    <div class="prompt-section">
+        <span class="prompt-label">Select Column Diameter:</span>
+        <label><input type="radio" name="diameter" value="4.6"> 4.6 mm</label>
+        <label><input type="radio" name="diameter" value="10"> 10 mm</label>
+        <label><input type="radio" name="diameter" value="21.2"> 21.2 mm</label>
+    </div>
+
+    <div class="prompt-section">
+        <span class="prompt-label">Select System Dwell Volume:</span>
+        <label><input type="radio" name="dwell" value="low"> Low (< 0.5 mL)</label>
+        <label><input type="radio" name="dwell" value="standard"> Standard (0.5 - 1.2 mL)</label>
+        <label><input type="radio" name="dwell" value="high"> High (> 1.2 mL)</label>
+    </div>
+
+    <div class="prompt-section">
+        <span class="prompt-label">Select Organic Solvent:</span>
+        <label><input type="radio" name="solvent" value="ACN"> Acetonitrile</label>
+        <label><input type="radio" name="solvent" value="MeOH"> Methanol</label>
+    </div>
 
 </body>
 </html>
