@@ -1,11 +1,60 @@
 ﻿<!DOCTYPE html>
-
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <title>"Preparative Focus Gradient Calculator"</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient Calculator</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 40px;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        h1 {
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        .prompt-group {
+            margin-bottom: 20px;
+        }
+
+        .prompt-text {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        label {
+            margin-right: 15px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
+
+    <h1>Preparative Focus Gradient Calculator</h1>
+
+    <div class="prompt-group">
+        <span class="prompt-text">1. Select your column size:</span>
+        <label><input type="radio" name="column" value="small"> 4.6mm</label>
+        <label><input type="radio" name="column" value="large"> 21.2mm</label>
+    </div>
+
+    <div class="prompt-group">
+        <span class="prompt-text">2. Select Flow Rate:</span>
+        <label><input type="radio" name="flow" value="1"> 1 mL/min</label>
+        <label><input type="radio" name="flow" value="20"> 20 mL/min</label>
+        <label><input type="radio" name="flow" value="custom"> Custom</label>
+    </div>
+
+    <div class="prompt-group">
+        <span class="prompt-text">3. Select Mobile Phase:</span>
+        <label><input type="radio" name="phase" value="water"> Water/ACN</label>
+        <label><input type="radio" name="phase" value="methanol"> Water/MeOH</label>
+    </div>
 
 </body>
 </html>
